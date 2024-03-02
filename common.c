@@ -45,6 +45,11 @@ size_t get_file_size(char* filename) {
 int read_file(char* filename, char** out_buf, size_t* file_len) {
 	/* Open the file */
 	FILE* f = fopen(filename, "rb");
+	if(!f) {
+		error("Failed to open file\n");
+		fclose(f);
+		return -1;
+	}
 	
 	/* Get the file length */
 	fseek(f, 0, SEEK_END);
