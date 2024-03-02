@@ -1,2 +1,2 @@
 # Toy-Neural-Network
-A simple neural network designed for understanding the back propagation algorithm - this is probably buggy and you definitely shouldn't use it. 
+A simple neural network designed for understanding the back propagation algorithm - this is meant as a learning exercise, you shouldn't use this for any actual projects.
